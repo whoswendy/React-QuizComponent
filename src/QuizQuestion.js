@@ -4,11 +4,17 @@ import QuizQuestionButton from './QuizQuestionButton.js'
 
 class QuizQuestion extends Component {
 
-  handleClick = (function(buttonText){
+  // handleClick = (function(buttonText){
+  //   if(buttonText === this.props.quiz_question.answer){
+  //     this.props.showNextQuestionHandler();
+  //   }
+  // });
+
+  handleClick(buttonText){
     if(buttonText === this.props.quiz_question.answer){
       this.props.showNextQuestionHandler();
     }
-  });
+  }
 
   render() {
     return (
